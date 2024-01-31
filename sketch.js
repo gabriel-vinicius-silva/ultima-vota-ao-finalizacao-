@@ -1,15 +1,18 @@
 const candidates = ['Candidate 1', 'Candidate 2'];  // Adicione mais candidatos conforme necessário
 
 function vote(candidateIndex) {
-    const password = prompt("Digite a senha GABRIEL:");
-
-    if (password === "GABRIEL") {
+    const password = prompt("Por favor digite a chave de acesso unica  :");
+    
+    if (password !== null) {
         const candidate = candidates[candidateIndex];
-        saveVote(candidate);
-        alert(`Você votou em ${candidate}`);
-        updateResults();
-    } else {
-        alert("Senha incorreta. Tente novamente.");
+
+        if (password === "GABRIEL") {
+            saveVote(candidate);
+            alert(`Você votou em ${candidate}`);
+            updateResults();
+        } else {
+            alert("Senha incorreta. Tente novamente.");
+        }
     }
 }
 

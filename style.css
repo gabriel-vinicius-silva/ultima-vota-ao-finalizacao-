@@ -54,3 +54,7 @@ h1 {
 #vote-results p {
     margin: 5px 0;
 }
+
+.password-input {
+    margin-top: 10px;
+}
